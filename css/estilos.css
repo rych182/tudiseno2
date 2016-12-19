@@ -22,6 +22,24 @@ body {/*Esto elimina los espaciados y pone el tipo de letra*/
 
 header {
 	width: 100%;
-	background: #281a0c;
-	
+	background: url('../img/medalla1920.jpg') #281a0c; /*Nos encontramos en la carpeta css, retrocedemos una carpeta y nos metemos a la carpeta img*/
+	background-size: cover;
+	background-attachment: fixed; /*Para que el fondo se quede pegada a la pantalla*/ 
+}
+
+header .contenedor { /*Para que el contenedor del header sea mas grande y se vea nuestra imagen*/
+	position: relative;/*El relative se usa cuando uno quiere mover los elementos*/
+	height: 700px; /*Le dimos la altura a nuestro header para que se vea la imagen*/
+}
+
+header .menu {
+	width: 100%; /*Esto es simplemente para asegurarnos que será el 100% del ancho*/
+	text-align: right; /*Para que los elementos se pongan a la derecha*/
+}
+
+header .menu a {
+	color: black;
+	font-size: 20px;
+	font-weight: 300;/*Este tamaño viene en el google font que utilizaste*/
+	display: inline-block; /*Para que los elementos se pongan uno al lado del otro*/
 }

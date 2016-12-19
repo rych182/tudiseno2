@@ -2,3 +2,5 @@ Imagenes alfredo
 
 imagen header 832x468
 
+portada 1920x772
+
