@@ -118,3 +118,152 @@ header .textos h3 {
 	line-height: 28px; /*Para que haya un espaciado entre cada linea*/
 	margin-bottom: 15px;
 }	
+
+.main .menu {
+	padding-top: 570px;/*Es el espacio entre el titulo MENU y la imagen de Header*/
+	padding-bottom: 50px; /*Para separar el menu de la galería*/
+}
+
+.main .menu .titulo {/*Trabajamos con la fuente del titulo*/
+	font-size: 40px;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.main .menu .contenedor-menu,
+.main .menu .contenedor-menu2 {/*Al hacer esto creamos nuestros bordes de menu*/
+	border: 1px solid #000; /*Se va a crear un borde de color negro*/
+	background: transparent;
+	padding: 10px;
+	overflow: hidden; /*Para que el contenido sobrante lo oculte*/	
+}
+
+.main .menu article { /*Dividir el menú en 2*/
+	width: 50%;
+	float: left;
+	padding: 20px;
+}
+
+.main .menu .categoria {
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.main .menu .platillo { /*Pone un borde de puntitos y si el texto se pasa, lo oculta para que no afetcte el diseño*/
+	margin-bottom: 30px;
+	padding-bottom: 20px;
+	border-bottom: dotted #000;
+	overflow: hidden;
+}
+
+.main .menu .nombre { /*Hace que el nombre este a la izquierda y el precio a la derecha*/
+	font-size: 20px;
+	margin-bottom: 15px;
+	float: left;
+}
+
+.main .menu .precio { /*Lo mismo que arriba pero el precio hacia el lado derecho*/
+	font-size: 20px;
+	margin-bottom: 15px;
+	float: right;
+}
+
+.main .menu .descripcion {
+	font-size: 16px;
+	color: #676767; /*Color gris que opaca la descripción*/
+	clear: both; /*Soluciona los problemas de los float left y float right*/
+}
+
+.main .galeria {
+	overflow: hidden; /*La galería la vay a trabajar con float*/
+}
+
+.main .galeria .foto {
+	width: 25%;
+	float: left; /*Para que las fotos se pongan una al lado del otro*/
+}
+
+.main .galeria .foto img{
+	width: 100%;/*Para que abarque todo el 25% que le pusimos arriba*/
+	vertical-align: top;
+	opacity: .7;
+}
+
+.main .galeria .foto img:hover{ /*Pones -transition y te aparece todo el webkit para que se vea bien en todos los navegadores*/
+	opacity: 1;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.main .ubicacion {
+	background: #fff;
+	padding: 60px 0;
+	overflow: hidden;/*Para evitar el problema de los float que podamos tener*/
+}
+
+.main .ubicacion .titulo {
+	text-align: center;
+	font-size: 40px;
+	line-height: 40px;
+	font-weight: 300;
+	margin-bottom: 40px;
+}
+
+.main .ubicacion .direccion {
+	float: left;
+	width: 50%;
+	text-align: left;	
+}
+
+.main .ubicacion .horarios {
+	float: right;
+	width: 50%;
+	text-align: center;
+	overflow: hidden;	
+}
+
+.main .ubicacion .direccion .calle {
+	margin-bottom: 15px;
+}
+
+.main .ubicacion .direccion h4 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.main .ubicacion .horarios .entre-semana,
+.main .ubicacion .horarios .fin-semana {
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+
+.main .mapa {
+	width: 100%;
+	overflow: hidden;
+}
+
+.main .mapa iframe { /*El iframe es el codigo de nuestro mapa*/
+	width: 100%;
+	max-height: 600px;
+}
+
+/* ----- ----- FOOTER ----- -----*/
+footer {
+	background: #000;
+}
+
+footer .copyright {
+	text-align: center;
+	padding: 15px 0;
+	color: #fff;
+}
+
+/* ---- ----- MEDIA QUERIES ----- ----- */
+@media screen and (max-width: 800px) {
+
+}
