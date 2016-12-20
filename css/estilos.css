@@ -42,4 +42,32 @@ header .menu a {
 	font-size: 20px;
 	font-weight: 300;/*Este tamaño viene en el google font que utilizaste*/
 	display: inline-block; /*Para que los elementos se pongan uno al lado del otro*/
+	margin: 40px 20px;
+	text-decoration: none; 
+	position: relative; /*Lo utilizaremos para trabajar con Jquery*/
+}
+
+header .menu a:hover {
+	text-decoration: underline; /*Subraya cuando acercas el mouse a los links*/
+}
+
+header .textos {
+	width: 100%;
+	position: absolute;/*Para trabajar con el efecto pharallasx para que no se mueva*/
+	top: 15%; /*La altura del titulo del header*/
+}
+
+header .textos .nombres {
+	font-size: 50px;
+	font-weight: 600;
+}
+
+header .textos .nombre span {
+	font-weight: 300;
+}
+
+header .textos h3 {
+	font-weight: 300;
+	font-size: 25px;
+	font-style: italic;
 }
